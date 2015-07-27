@@ -1,0 +1,17 @@
+# Site settings
+title: ASP.NET, Sitecore and software development
+header-img: img/home-bg.jpg
+email: your-email@yourdomain.com
+description: "ASP.NET, Sitecore and software development"
+#baseurl: "/startbootstrap-clean-blog-jekyll"
+#url: "http://yourdomain.com"
+#twitter_username: SBootstrap
+github_username:  chowson
+#facebook_username:  IronSummitMedia
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
