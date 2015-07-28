@@ -1,3 +1,9 @@
+/*!
+ * Clean Blog v1.0.0 (http://startbootstrap.com)
+ * Copyright 2015 Start Bootstrap
+ * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 20px;
@@ -24,7 +30,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  color: #356b97;
 }
 a img:hover,
 a img:focus {
@@ -109,14 +115,14 @@ hr.small {
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #0085a1;
+    color: #356b97;
   }
   .navbar-custom.is-fixed .nav li a {
     color: #404040;
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #0085a1;
+    color: #356b97;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -128,10 +134,12 @@ hr.small {
   }
 }
 .intro-header {
-  background: -webkit-linear-gradient(#00609C, #258dc8); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#00609C, #258dc8); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#00609C, #258dc8); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#00609C, #258dc8); /* Standard syntax (must be last) */
+  background: no-repeat center center;
+  background: -webkit-linear-gradient(#00609c, #258dc8);
+  background: -o-linear-gradient(#00609c, #258dc8);
+  background: -moz-linear-gradient(#00609c, #258dc8);
+  background: linear-gradient(#00609c, #258dc8);
+  background-attachment: scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -144,13 +152,6 @@ hr.small {
   padding: 100px 0 50px;
   color: white;
 }
-@media only screen and (min-width: 768px) {
-  .intro-header .site-heading,
-  .intro-header .post-heading,
-  .intro-header .page-heading {
-    padding: 100px 0;
-  }
-}
 .intro-header .site-heading,
 .intro-header .page-heading {
   text-align: center;
@@ -160,20 +161,20 @@ hr.small {
   margin-top: 0;
   font-size: 50px;
 }
+@media (max-width: 768px) {
+  .intro-header .site-heading h1,
+  .intro-header .page-heading h1 {
+    font-size: 30px;
+  }
+}
 .intro-header .site-heading .subheading,
 .intro-header .page-heading .subheading {
   font-size: 24px;
-  line-height: 1.1;
-  display: block;
+  line-height: 1.1,
+			display: block;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   margin: 10px 0 0;
-}
-@media only screen and (min-width: 768px) {
-  .intro-header .site-heading h1,
-  .intro-header .page-heading h1 {
-    font-size: 50px;
-  }
 }
 .intro-header .post-heading h1 {
   font-size: 35px;
@@ -209,14 +210,19 @@ hr.small {
 .post-preview > a {
   color: #404040;
 }
+@media (max-width: 768px) {
+  .post-preview > a {
+    text-align: center;
+  }
+}
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #0085a1;
+  color: #356b97;
 }
 .post-preview > a > .post-title {
   font-size: 30px;
-  margin-top: 30px;
+  margin-top: 0px;
   margin-bottom: 10px;
 }
 .post-preview > a > .post-subtitle {
@@ -226,9 +232,26 @@ hr.small {
 }
 .post-preview > .post-meta {
   color: #808080;
-  font-size: 18px;
-  font-style: italic;
+  font-size: 1em;
   margin-top: 0;
+  text-align: center;
+  line-height: 1.6em;
+  font-weight: 800;
+}
+.post-preview > .post-meta > span.day {
+  line-height: 1.1em;
+  color: #356b97;
+  font-size: 2em;
+  width: 100%;
+  display: block;
+}
+.post-preview > .post-meta > span.month-year {
+  color: black;
+  width: 100%;
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  line-height: 1em;
 }
 .post-preview > .post-meta > a {
   text-decoration: none;
@@ -236,7 +259,7 @@ hr.small {
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #0085a1;
+  color: #356b97;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -316,7 +339,7 @@ footer .copyright {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #0085a1;
+  color: #356b97;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -336,8 +359,8 @@ form .row:first-child .floating-label-form-group {
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #356b97;
+  border: 1px solid #356b97;
   color: white;
 }
 .pager {
@@ -364,8 +387,8 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #356b97;
+  border: 1px solid #356b97;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
@@ -378,12 +401,12 @@ form .row:first-child .floating-label-form-group {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #356b97;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #356b97;
 }
 img::selection {
   color: white;
@@ -394,5 +417,5 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #0085a1;
+  webkit-tap-highlight-color: #356b97;
 }

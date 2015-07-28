@@ -158,7 +158,10 @@ hr.small {
 
 .intro-header {
 	background: no-repeat center center;
-	background-color: @gray;
+	background: -webkit-linear-gradient(#00609C, #258dc8);
+    background: -o-linear-gradient(#00609C, #258dc8);
+    background: -moz-linear-gradient(#00609C, #258dc8);
+    background: linear-gradient(#00609C, #258dc8);
 	background-attachment: scroll;
 	.background-cover;
 	// NOTE: Background images are set within the HTML using inline CSS!
@@ -168,9 +171,6 @@ hr.small {
 	.page-heading {
 		padding: 100px 0 50px;
 		color: white;
-		@media only screen and (min-width: 768px) {
-			padding: 150px 0;
-		}
 	}
 	.site-heading,
 	.page-heading {
@@ -178,6 +178,9 @@ hr.small {
 		h1 {
 			margin-top: 0;
 			font-size: 50px;
+			@media (max-width: @screen-xs-max) {
+				font-size: 30px;
+			}
 		}
 		.subheading {
 			font-size: 24px;
@@ -186,11 +189,6 @@ hr.small {
 			.sans-serif;
 			font-weight: 300;
 			margin: 10px 0 0;
-		}
-		@media only screen and (min-width: 768px) {
-			h1 {
-				font-size: 80px;
-			}
 		}
 	}
 	.post-heading {
@@ -232,6 +230,9 @@ hr.small {
 
 .post-preview {
 	> a {
+		@media (max-width: @screen-xs-max) {
+			text-align:center;
+		}
 		color: @gray-dark;
 		&:hover,
 		&:focus {
@@ -240,7 +241,7 @@ hr.small {
 		}
 		> .post-title {
 			font-size: 30px;
-			margin-top: 30px;
+			margin-top: 0px;
 			margin-bottom: 10px;
 		}
 		> .post-subtitle {
@@ -251,9 +252,26 @@ hr.small {
 	}
 	> .post-meta {
 		color: @gray;
-		font-size: 18px;
-		font-style: italic;
+		font-size: 1em;
 		margin-top: 0;
+		text-align:center;
+		line-height:1.6em;
+		font-weight:800;
+		> span.day {
+			line-height:1.1em;
+			color:#356b97;
+			font-size:2em;
+			width:100%;
+			display:block;
+		}
+		> span.month-year {
+			color:black;
+			width:100%;
+			display:block;
+			text-transform:uppercase;
+			font-size:0.7em;
+			line-height:1em;
+		}
 		> a {
 			text-decoration: none;
 			color: @gray-dark;
