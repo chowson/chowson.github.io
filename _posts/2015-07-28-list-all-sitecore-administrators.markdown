@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "List all Sitecore Administrator"
-subtitle:   "Problems look mighty small from 150 miles up"
+title:      "List all Sitecore Administrators"
+subtitle:   "Simple way to generate a list of users which have administrator rights"
 date:       2015-07-28 19:14:00
 author:     "Chris"
 header-img: "img/post-bg-06.jpg"
@@ -9,21 +9,17 @@ header-img: "img/post-bg-06.jpg"
 
 <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
 
-```
-SELECT * FROM Administrators
+```python
+# Here is some in python
+def foo():
+  print 'foo'
 ```
 
-~~~ ruby
-print "Hello World"
-~~~
-
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
+{% highlight sql %}
+SELECT * FROM Admins
 {% endhighlight %}
 
-```sql
+{% highlight csharp %}
 using System;
 
 namespace CSharpBeginner
@@ -60,7 +56,7 @@ namespace CSharpBeginner
 		}
 	}
 }
-```
+{% endhighlight %}
 
 <p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
 
