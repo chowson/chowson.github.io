@@ -11,10 +11,10 @@ get a list of users which are an administrator. This is because the administrato
 profile value on the user. To generate a list of administrators run the following script against your
 <em>core</em> database.</p>
 
-<p>You can also modify the script to find users with the existence of a profile key and optionally a particular 
-value. To do this you will need to modify the <em>@propertyKey</em> and <em>@expectedValue</em> variables at 
-the top of the script. Leaving <em>@expectedValue</em> as an empty string will return users which have the 
-existence of a profile key rather than trying to match it to a value.</p>
+<p>You can also modify the script to find users with the existence of any profile key and optionally users which
+have a profile key that matches a particular  value. To do this you will need to modify the <em>@propertyKey</em>
+and <em>@expectedValue</em> variables at the top of the script. Leaving <em>@expectedValue</em> as an empty string
+will return users which have the existence of a profile key rather than trying to match it to a value.</p>
 
 {% highlight sql %}
 DECLARE @propertyKey AS nvarchar(50), @expectedValue AS nvarchar(255)
