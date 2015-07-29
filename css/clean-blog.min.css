@@ -23,14 +23,14 @@ h4,
 h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 800;
+  font-weight: 700;
 }
 a {
   color: #404040;
 }
 a:hover,
 a:focus {
-  color: #356b97;
+  color: #00609c;
 }
 a img:hover,
 a img:focus {
@@ -115,14 +115,14 @@ hr.small {
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #356b97;
+    color: #00609c;
   }
   .navbar-custom.is-fixed .nav li a {
     color: #404040;
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #356b97;
+    color: #00609c;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -146,6 +146,11 @@ hr.small {
   -o-background-size: cover;
   margin-bottom: 50px;
 }
+@media only screen and (max-width: 768px) {
+  .intro-header {
+    margin-bottom: 0px;
+  }
+}
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
@@ -161,7 +166,7 @@ hr.small {
   margin-top: 0;
   font-size: 50px;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .intro-header .site-heading h1,
   .intro-header .page-heading h1 {
     font-size: 30px;
@@ -210,19 +215,14 @@ hr.small {
 .post-preview > a {
   color: #404040;
 }
-@media (max-width: 768px) {
-  .post-preview > a {
-    text-align: center;
-  }
-}
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #356b97;
+  color: #00609c;
 }
 .post-preview > a > .post-title {
   font-size: 30px;
-  margin-top: 0px;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 .post-preview > a > .post-subtitle {
@@ -230,28 +230,16 @@ hr.small {
   font-weight: 300;
   margin-bottom: 10px;
 }
+@media only screen and (max-width: 768px) {
+  .post-preview > a > h3 {
+    font-size: 16px;
+  }
+}
 .post-preview > .post-meta {
   color: #808080;
-  font-size: 1em;
-  margin-top: 0;
-  text-align: center;
-  line-height: 1.6em;
-  font-weight: 800;
-}
-.post-preview > .post-meta > span.day {
-  line-height: 1.1em;
-  color: #356b97;
-  font-size: 2em;
-  width: 100%;
-  display: block;
-}
-.post-preview > .post-meta > span.month-year {
-  color: black;
-  width: 100%;
-  display: block;
+  font-size: 14px;
   text-transform: uppercase;
-  font-size: 0.7em;
-  line-height: 1em;
+  margin-top: 0;
 }
 .post-preview > .post-meta > a {
   text-decoration: none;
@@ -259,7 +247,7 @@ hr.small {
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #356b97;
+  color: #00609c;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -339,7 +327,7 @@ footer .copyright {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #356b97;
+  color: #00609c;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -359,8 +347,8 @@ form .row:first-child .floating-label-form-group {
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #356b97;
-  border: 1px solid #356b97;
+  background-color: #00609c;
+  border: 1px solid #00609c;
   color: white;
 }
 .pager {
@@ -387,8 +375,8 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
-  background-color: #356b97;
-  border: 1px solid #356b97;
+  background-color: #00609c;
+  border: 1px solid #00609c;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
@@ -401,12 +389,12 @@ form .row:first-child .floating-label-form-group {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #356b97;
+  background: #00609c;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #356b97;
+  background: #00609c;
 }
 img::selection {
   color: white;
@@ -417,5 +405,5 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #356b97;
+  webkit-tap-highlight-color: #00609c;
 }

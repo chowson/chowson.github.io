@@ -1,15 +1,11 @@
 ---
 layout: page
-description: "chowson.github.io"
+description: "Sitecore, ASP.NET & Software Development"
 ---
 
 {% for post in paginator.posts %}
 <div class="post-preview">
-	<span class="post-meta col-sm-2">
-		<span class="day">{{ post.date | date: "%-d" }}</span>
-		<span class="month-year">{{ post.date | date: "%B %Y" }}</span>
-	</span>
-    <a class="col-sm-10" href="{{ post.url | prepend: site.baseurl }}">
+	<a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">{{ post.title }}</h2>
         {% if post.subtitle %}
         <h3 class="post-subtitle">
@@ -17,6 +13,7 @@ description: "chowson.github.io"
         </h3>
         {% endif %}
     </a>
+	<p class="post-meta">{{ post.date | date: "%-d %B %Y" }}</p>
 </div>
 <hr>
 {% endfor %}
