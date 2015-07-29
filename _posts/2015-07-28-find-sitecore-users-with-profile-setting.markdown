@@ -56,8 +56,7 @@ BEGIN
     
     SET @propertyNames = (SUBSTRING(@propertyNames, @startIndex, (@pos - @startIndex - 1)))
     SET @startIndex = (SUBSTRING(@propertyNames, 1, (CHARINDEX(':', @propertyNames) -1)))
-    SET @endIndex = (SUBSTRING(@propertyNames, (CHARINDEX(':', @propertyNames)  + 1),
-                        (LEN(@propertyNames) - CHARINDEX(':', @propertyNames))))
+    SET @endIndex = (SUBSTRING(@propertyNames, (CHARINDEX(':', @propertyNames)  + 1), (LEN(@propertyNames) - CHARINDEX(':', @propertyNames))))
     
     -- Verify PropertyValue for IsAdministrator profile key is 'True'
     DECLARE @propertyStrings AS nvarchar(MAX)
