@@ -9,7 +9,7 @@ description: "Using AutoResponder in FiddlerCore to block requests"
 <p>Fiddler has some really powerful tools for aiding development and assisting with debugging. One of these features is
 the AutoResponder tab:</p>
 
-![Screenshot of Fiddler AutoResponder]({{ site.url }}/assets/2015-08-07-block-requests-with-fiddlercore/fiddler-autoresponder.jpg)
+![Screenshot of Fiddler AutoResponder]({{ site.url }}/assets/2015-08-07-block-requests-with-fiddlercore/fiddler-autoresponder.JPG)
 
 <p>When writing integration tests, you may need to set up a scenario to test the application in a given state based on
 different responses from external systems. The following class shows an example of how you can intercept requests and respond
