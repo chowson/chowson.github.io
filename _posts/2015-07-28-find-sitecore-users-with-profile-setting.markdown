@@ -4,6 +4,7 @@ title:      "Find Sitecore users with profile setting"
 subtitle:   "SQL to find users with profile setting, e.g. IsAdministrator, FullName"
 date:       2015-07-28 19:14:00
 description: "Find Sitecore users with profile setting"
+tags: [sitecore,sql,debugging]
 ---
 
 <p>Through the role manager, you can easily find which users are in a particular role but you can't easily

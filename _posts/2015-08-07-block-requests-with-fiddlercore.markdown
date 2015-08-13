@@ -1,9 +1,13 @@
 ---
 layout:     post
+references: ['http://docs.telerik.com/fiddler/KnowledgeBase/AutoResponder|Fiddler AutoResponder KB',
+			'http://fiddler.wikidot.com/fiddlercore-autorespond|FiddlerCore AutoResponder Wiki']
 title:      "Block requests with FiddlerCore"
 subtitle:   "Using AutoResponder in FiddlerCore to block requests"
 date:       2015-08-07 12:35:00
 description: "Using AutoResponder in FiddlerCore to block requests"
+category: programming
+tags: [sitecore,'automated-testing',debugging]
 ---
 
 <p>Fiddler has some really powerful tools for aiding development and assisting with debugging. One of these features is
@@ -72,10 +76,3 @@ public void TearDown()
     BlockTrackingWebsiteRequestsContext.TearDownBlockTrackingWebsiteRequests();
 }
 {% endhighlight %}
-
-<h3>References</h3>
-<ul>
-    <li><a href="http://docs.telerik.com/fiddler/KnowledgeBase/AutoResponder">Fiddler AutoResponder KB</a></li>
-	<li><a href="http://fiddler.wikidot.com/fiddlercore-autorespond">FiddlerCore AutoResponder Wiki</a></li>
-	
-</ul>
