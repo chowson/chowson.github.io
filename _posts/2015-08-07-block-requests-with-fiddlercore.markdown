@@ -6,7 +6,6 @@ title:      "Block requests with FiddlerCore"
 subtitle:   "Using AutoResponder in FiddlerCore to block requests"
 date:       2015-08-07 12:35:00
 description: "Using AutoResponder in FiddlerCore to block requests"
-category: programming
 tags: [sitecore,'automated-testing',debugging]
 ---
 
