@@ -50,7 +50,7 @@ layout: default
 
                 <hr>
 				
-				{% if post.references %}
+				{% if post.references.size > 0 %}
 				<h3>References</h3>
 				<ul>
 					{% for reference in post.references %}
