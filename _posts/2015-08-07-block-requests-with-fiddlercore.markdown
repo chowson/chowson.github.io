@@ -6,7 +6,7 @@ title:      "Block requests with FiddlerCore"
 subtitle:   "Using AutoResponder in FiddlerCore to block requests"
 date:       2015-08-07 12:35:00
 description: "Using AutoResponder in FiddlerCore to block requests"
-tags: [sitecore,'automated-testing',debugging]
+tags: ['automated-testing',debugging]
 ---
 
 <p>Fiddler has some really powerful tools for aiding development and assisting with debugging. One of these features is

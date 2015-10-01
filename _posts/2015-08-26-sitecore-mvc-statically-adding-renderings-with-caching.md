@@ -1,7 +1,7 @@
 ---
 layout:     post
 references: []
-title:      "Statically Adding MVC Renderings with Caching"
+title:      "Statically Adding Sitecore MVC Renderings with Caching"
 subtitle:   "Sitecore helper method to add a rendering within a view with caching"
 date:       2015-08-26 16:18:00
 description: "Sitecore helper method to add a rendering within a view with caching"

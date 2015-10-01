@@ -1,0 +1,12 @@
+---
+layout: page
+description: "Blog post tags"
+---
+
+<h3>Browse blog posts by tag</h3>
+<br />
+<ul>
+{% for tag in site.data.tags %}
+	<li><a href="/tag/{{ tag.slug }}">{{ tag.name }}</a><br/><br/></li>
+{% endfor %}
+</ul>
