@@ -1,7 +1,7 @@
 ---
 layout:     post
 references: []
-title:      "Statically Adding Sitecore MVC Renderings with Caching"
+title:      "Programmatically Adding Sitecore MVC Renderings with Caching"
 subtitle:   "Sitecore helper method to add a rendering within a view with caching"
 date:       2015-08-26 16:18:00
 description: "Sitecore helper method to add a rendering within a view with caching"
@@ -10,7 +10,7 @@ tags: [sitecore,mvc]
 
 <p>Sitecore provides a suite of web controls for Web Forms development within the 
 <em>Sitecore.Web.UI.WebControls</em> namespace and one of these controls is 
-<em>Sublayout</em>. This was used to statically add a Sitecore sublayout to the current sublayout.
+<em>Sublayout</em>. This was used to programmatically add a Sitecore sublayout to the current sublayout.
 This control inherits from <em>Sitecore.Web.UI.WebControls.WebControl</em> which contains all of the standard 
 caching properties such as <em>Cacheable, VaryByData, VaryByQueryString</em> etc. Example usage of the <em>Sublayout</em> control:</p>
 
@@ -25,7 +25,7 @@ within the view. For example:</p>
 @Html.Sitecore().Rendering("{00000000-0000-0000-0000-000000000000}")
 {% endhighlight %}
 
-<p>One important thing to note is that when adding a rendering statically, the cache settings specified on the sublayout/rendering 
+<p>One important thing to note is that when adding a rendering programmatically, the cache settings specified on the sublayout/rendering 
 definition item in Sitecore are <strong>NOT</strong> picked up. To define cache settings on the <em>Rendering</em> method, you must use 
 a method overload to specify the caching behaviour on the rendering. There is no intuitive overload where you can pass in values for <em>Cacheable</em>
 or <em>VaryByData</em> as with the <em>WebControl</em>. To add caching to the example above, an anonymous type needs to be defined, for example:</p>

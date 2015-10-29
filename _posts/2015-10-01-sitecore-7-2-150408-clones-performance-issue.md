@@ -29,3 +29,10 @@ returned to its previous speed and resolved the issue.</p>
 <p>The issue has been raised as a bug with the software and can be tracked using the reference
 number 436659 (for information on reference numbers you can read the <a href="https://kb.sitecore.net/articles/853187">
 KB article</a>).</p>
+
+<h4>Update 29/10/2015</h4>
+<p>The <a href="https://sdn.sitecore.net/products/sitecore%20v5/sitecore%20cms%207/releasenotes/changelog/release%20history%20sc72.aspx">
+release notes of Sitecore 7.2 Update-5</a> indicate that this issue has been resolved.</p>
+
+
+<blockquote>The performance of the get item operation for both regular and clone items has been increased by introducing a separate shared field called ‘__Source Item’. This now allows you to keep a reference to original item. (436659)</blockquote>
