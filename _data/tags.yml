@@ -1,6 +1,9 @@
 - slug: automated-testing
   name: Automated Testing
   
+- slug: aws
+  name: AWS
+  
 - slug: debugging
   name: Debugging
 
