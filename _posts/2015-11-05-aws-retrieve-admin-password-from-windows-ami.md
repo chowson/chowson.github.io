@@ -6,7 +6,7 @@ references: ["http://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/troubleshoot
 title:      "AWS: EC2 Password Retrieval of Windows AMI instance"
 subtitle:   "Enabling administrator password retrieval of an EC2 instance created from a custom Windows AMI"
 date:       2015-11-05 18:48:00
-description: ""
+description: "Enabling administrator password retrieval of an EC2 instance created from a custom Windows AMI"
 tags: [aws]
 ---
 
