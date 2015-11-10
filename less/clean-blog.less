@@ -6,6 +6,9 @@
 body {
 	.serif;
 	font-size: 20px;
+	@media only screen and (max-width: @screen-xs-max) {
+		font-size: 18px;
+	}
 	color: @gray-dark;
 }
 
@@ -172,6 +175,9 @@ hr.small {
 	.post-heading,
 	.page-heading {
 		padding: 100px 0 50px;
+		@media only screen and (max-width: @screen-xs-max) {
+			padding: 60px 0 50px;
+		}
 		color: white;
 	}
 	.site-heading,
@@ -185,7 +191,7 @@ hr.small {
 			}
 		}
 		.subheading {
-			font-size: 24px;
+			font-size: 22px;
 			line-height: 1.1,
 			display: block;
 			.sans-serif;
@@ -196,6 +202,9 @@ hr.small {
 	.post-heading {
 		h1 {
 			font-size: 35px;
+			@media only screen and (max-width: @screen-xs-max) {
+				font-size: 30px;
+			}
 		}
 		.subheading,
 		.meta {
@@ -207,12 +216,18 @@ hr.small {
 			font-size: 24px;
 			margin: 10px 0 30px;
 			font-weight: 600;
+			@media only screen and (max-width: @screen-xs-max) {
+				font-weight:300;
+			}
 		}
 		.meta {
 			.serif;
 			font-style: italic;
 			font-weight: 300;
 			font-size: 20px;
+			@media only screen and (max-width: @screen-xs-max) {
+				font-size: 16px;
+			}
 			a {
 				color: white;
 			}

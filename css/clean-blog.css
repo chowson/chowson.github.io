@@ -9,6 +9,11 @@ body {
   font-size: 20px;
   color: #404040;
 }
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
 p {
   line-height: 1.5;
   margin: 30px 0;
@@ -157,6 +162,13 @@ hr.small {
   padding: 100px 0 50px;
   color: white;
 }
+@media only screen and (max-width: 768px) {
+  .intro-header .site-heading,
+  .intro-header .post-heading,
+  .intro-header .page-heading {
+    padding: 60px 0 50px;
+  }
+}
 .intro-header .site-heading,
 .intro-header .page-heading {
   text-align: center;
@@ -174,7 +186,7 @@ hr.small {
 }
 .intro-header .site-heading .subheading,
 .intro-header .page-heading .subheading {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.1,
 			display: block;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -183,6 +195,11 @@ hr.small {
 }
 .intro-header .post-heading h1 {
   font-size: 35px;
+}
+@media only screen and (max-width: 768px) {
+  .intro-header .post-heading h1 {
+    font-size: 30px;
+  }
 }
 .intro-header .post-heading .subheading,
 .intro-header .post-heading .meta {
@@ -195,11 +212,21 @@ hr.small {
   margin: 10px 0 30px;
   font-weight: 600;
 }
+@media only screen and (max-width: 768px) {
+  .intro-header .post-heading .subheading {
+    font-weight: 300;
+  }
+}
 .intro-header .post-heading .meta {
   font-family: 'Lora', 'Times New Roman', serif;
   font-style: italic;
   font-weight: 300;
   font-size: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .intro-header .post-heading .meta {
+    font-size: 16px;
+  }
 }
 .intro-header .post-heading .meta a {
   color: white;
