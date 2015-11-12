@@ -20,7 +20,7 @@ and the PEM file the instances were assigned to so that the password can be decr
 
 <p>Here is an example of the output you will get:</p>
 
-<img src="/assets/2015-11-12-aws-bulk-password-retrieval/describe-ec2-instances.jpg" />
+<img src="/assets/2015-11-12-aws-bulk-password-retrieval/describe-ec2-instances.JPG" />
 
 <p>And the script to generate it:</p>
 
