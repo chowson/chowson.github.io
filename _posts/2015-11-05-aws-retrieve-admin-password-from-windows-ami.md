@@ -34,9 +34,7 @@ and also enable the password to be retrieved from the EC2 console. To do this, c
 	<li>Once the instance is stopped, create your AMI as normal.</li>
 </ol>
 
-<div class="centre">
-	<img src="/assets/2015-11-05-aws-retrieve-admin-password-from-windows-ami/EC2ConfigService-RandomPassword.png" alt="Configuring EC2Config service for random generated passwords" />
-</div>
+<img src="/assets/2015-11-05-aws-retrieve-admin-password-from-windows-ami/EC2ConfigService-RandomPassword.png" alt="Configuring EC2Config service for random generated passwords" />
 
 <p>The next time you create an EC2 instance from this AMI, you will be able to retrieve the Administrator password from the console
 as normal rather than getting the error message above.</p>
