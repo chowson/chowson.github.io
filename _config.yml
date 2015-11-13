@@ -4,10 +4,11 @@ title: chowson.github.io
 email: your-email@yourdomain.com
 description: chowson.github.io
 github_username:  chowson
+url: http://chowson.github.io
 
 # Build settings
 markdown: kramdown
 highlighter: pygments
-permalink: /:title
+permalink: /:title/
 paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]

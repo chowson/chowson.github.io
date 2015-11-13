@@ -21,7 +21,8 @@ module.exports = function(grunt) {
             minified: {
                 options: {
                     paths: ["css"],
-                    cleancss: true
+                    cleancss: true,
+					compress:true
                 },
                 files: {
                     "css/<%= pkg.name %>.min.css": "less/<%= pkg.name %>.less"
@@ -69,6 +70,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Default task(s).
-    grunt.registerTask('default', ['uglify', 'less', 'usebanner']);
+    grunt.registerTask('default', ['uglify', 'less']);
 
 };
