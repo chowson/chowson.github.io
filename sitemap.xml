@@ -7,10 +7,10 @@ layout: null
   <url>
     <loc>{{ "/" | prepend: site.baseurl | prepend: site.url }}</loc>
     <priority>0.5</priority>
-  </url>{% assign pages = site.posts.size | divided_by: site.paginate %}{% assign pagesItems = pages | times:site.paginate %}{% if pagesItems < site.posts.size %}{% assign pages = pages | plus:1 %}{% endif %}{% for page in (1..pages) %}
+  </url>{% assign pages = site.posts.size | divided_by: site.paginate %}{% assign pagesItems = pages | times:site.paginate %}{% if pagesItems < site.posts.size %}{% assign pages = pages | plus:1 %}{% endif %}{% for page in (2..pages) %}
   <url>
     <loc>{{ "/page" | append:page | append:"/" | prepend: site.baseurl | prepend: site.url }}</loc>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>{% endfor %}
   <!-- Posts -->{% for post in site.posts %}
   <url>

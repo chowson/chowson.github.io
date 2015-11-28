@@ -3,7 +3,7 @@ layout:     post
 references: ["http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/GettingStartedTutorial.html|Auto Scaling Documentation", "http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/WorkingWithLaunchConfig.html|Creating Launch Configuration", "http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/schedule_time.html|Scheduled Scaling"]
 title:      "Attach Volume to EC2 instance in Auto Scaling Group"
 subtitle:   "Attaching a volume to an EC2 instance in an Auto Scaling Group using Powershell and CloudFormation"
-date:       2015-11-27 22:12:00
+date:       2015-11-28 22:12:00
 description: "Attaching a volume to an EC2 instance in an Auto Scaling Group using Powershell and CloudFormation"
 tags: [aws]
 ---
