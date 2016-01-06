@@ -149,3 +149,7 @@ Follow this guide to enable this with Sitecore log files:</p>
 	to see if there are any errors with your setup.</span>
 	</li>
 </ol>
+<br />
+<h4>Analysing Sitecore Logs stored in AWS CloudWatch Logs</h4>
+<p>The next article describes how to <a href="{% post_url 2016-01-12-analyse-sitecore-logs-in-aws-cloudwatch-logs %}">
+Analyse Sitecore Logs stored in AWS CloudWatch Logs</a>.</p>
