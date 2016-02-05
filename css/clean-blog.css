@@ -431,6 +431,12 @@ body {
 .highlight pre code {
   display: inline-block;
 }
+@media screen and (max-width: 767px) {
+  figure.highlight div.table-responsive {
+    border: none;
+    margin-bottom: 0px;
+  }
+}
 figure.highlight table {
   margin-bottom: 0px;
 }
