@@ -486,3 +486,43 @@ body {
 .highlight pre code {
   display: inline-block;
 }
+
+figure.highlight {
+	table {
+		margin-bottom:0px;
+		td {
+			border:none;
+			padding:0px;
+			
+			&.gutter {
+				pre.lineno {
+					white-space:pre;
+					border:none;
+					padding:0px;
+					margin:0px;
+				}
+			}
+			
+			&.code {
+				padding-left:10px;
+				
+				pre {
+					white-space:pre;
+					border:none;
+					padding:0px;										
+					margin:0px;
+				}
+			}
+		}
+	}
+
+	pre {
+		span.w {
+			white-space: pre;
+		}
+	}
+}
+
+
+
+

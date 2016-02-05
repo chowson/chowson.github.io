@@ -54,7 +54,7 @@ public class PublishItemCheckSecurity : PublishItem
             : baseState;
         }
     }
-    {% endhighlight %}
+{% endhighlight %}
   </li>
   <li>Patch in the new command referenced in step 1 to replace the default Sitecore command:
   {% highlight xml %}
@@ -67,7 +67,7 @@ public class PublishItemCheckSecurity : PublishItem
     </commands>
   </sitecore>
 </configuration>
-  {% endhighlight %}
+{% endhighlight %}
   </li>
 </ol>
 

@@ -431,3 +431,28 @@ body {
 .highlight pre code {
   display: inline-block;
 }
+figure.highlight table {
+  margin-bottom: 0px;
+}
+figure.highlight table td {
+  border: none;
+  padding: 0px;
+}
+figure.highlight table td.gutter pre.lineno {
+  white-space: pre;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+figure.highlight table td.code {
+  padding-left: 10px;
+}
+figure.highlight table td.code pre {
+  white-space: pre;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+figure.highlight pre span.w {
+  white-space: pre;
+}
