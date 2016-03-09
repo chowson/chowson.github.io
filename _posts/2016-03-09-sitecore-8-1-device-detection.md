@@ -79,6 +79,8 @@ your own implementation of a device information provider:</p>
 {% highlight csharp %}
 public class CustomDeviceInformationProvider : Sitecore.CES.DeviceDetection.DeviceInformationProviderBase
 {
+    private readonly ReaderWriterLockSlim _readerWriterLockSlim = new ReaderWriterLockSlim();
+
     public override bool IsEnabled
     {
         get
@@ -99,31 +101,38 @@ public class CustomDeviceInformationProvider : Sitecore.CES.DeviceDetection.Devi
     {
         Assert.ArgumentNotNull(userAgent, "userAgent");
         
-        // TODO: Implement functionality to fill in DeviceInformation from  supplier
-		
-        var deviceInformation = CustomLogicToGetDeviceInformation();
-		
-        DeviceInformation deviceInformation = new DeviceInformation
+        using (new ReadScope(_readerWriterLockSlim))
         {
-            Browser = deviceInformation.Browser,
-            BrowserCanJavaScript = deviceInformation.BrowserCanJavaScript,
-            BrowserHtml5AudioCanAudio = deviceInformation.BrowserHtml5AudioCanAudio,
-            BrowserHtml5VideoCanVideo = deviceInformation.BrowserHtml5VideoCanVideo,
-            CanTouchScreen = deviceInformation.CanTouchScreen,
-            DeviceIsSmartphone = deviceInformation.DeviceIsSmartphone,
-            DeviceModelName = deviceInformation.DeviceModelName,
-            DeviceOperatingSystemModel = deviceInformation.DeviceOperatingSystemModel,
-            DeviceOperatingSystemVendor = deviceInformation.DeviceOperatingSystemVendor,
-            DeviceType = deviceInformation.DeviceType,
-            DeviceVendor = deviceInformation.DeviceVendor,
-            HardwareDisplayHeight = deviceInformation.HardwareDisplayHeight,
-            HardwareDisplayWidth = deviceInformation.HardwareDisplayWidth
-        };
+            // TODO: Implement functionality to fill in DeviceInformation from  supplier
+			
+            var deviceInformation = CustomLogicToGetDeviceInformation();
+            
+            DeviceInformation deviceInformation = new DeviceInformation
+            {
+                Browser = deviceInformation.Browser,
+                BrowserCanJavaScript = deviceInformation.BrowserCanJavaScript,
+                BrowserHtml5AudioCanAudio = deviceInformation.BrowserHtml5AudioCanAudio,
+                BrowserHtml5VideoCanVideo = deviceInformation.BrowserHtml5VideoCanVideo,
+                CanTouchScreen = deviceInformation.CanTouchScreen,
+                DeviceIsSmartphone = deviceInformation.DeviceIsSmartphone,
+                DeviceModelName = deviceInformation.DeviceModelName,
+                DeviceOperatingSystemModel = deviceInformation.DeviceOperatingSystemModel,
+                DeviceOperatingSystemVendor = deviceInformation.DeviceOperatingSystemVendor,
+                DeviceType = deviceInformation.DeviceType,
+                DeviceVendor = deviceInformation.DeviceVendor,
+                HardwareDisplayHeight = deviceInformation.HardwareDisplayHeight,
+                HardwareDisplayWidth = deviceInformation.HardwareDisplayWidth
+            };
+        }
         
         return deviceInformation;
     }
 }
 {% endhighlight %}
+
+<p>Calling the base class's implementation of <em>GetDeviceInformation</em> ensures that
+the result is cached within the Sitecore <em>DeviceItemsCache</em> and therefore only 
+1 lookup is required per user agent (until the cache is cleared).</p>
 
 <h4>Sitecore Rules Engine Integration</h4>
 <p>One of the device detection integrations Sitecore provides
