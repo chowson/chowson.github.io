@@ -107,25 +107,8 @@ public class CustomDeviceInformationProvider : Sitecore.CES.DeviceDetection.Devi
 			
             var deviceInformation = CustomLogicToGetDeviceInformation();
             
-            DeviceInformation deviceInformation = new DeviceInformation
-            {
-                Browser = deviceInformation.Browser,
-                BrowserCanJavaScript = deviceInformation.BrowserCanJavaScript,
-                BrowserHtml5AudioCanAudio = deviceInformation.BrowserHtml5AudioCanAudio,
-                BrowserHtml5VideoCanVideo = deviceInformation.BrowserHtml5VideoCanVideo,
-                CanTouchScreen = deviceInformation.CanTouchScreen,
-                DeviceIsSmartphone = deviceInformation.DeviceIsSmartphone,
-                DeviceModelName = deviceInformation.DeviceModelName,
-                DeviceOperatingSystemModel = deviceInformation.DeviceOperatingSystemModel,
-                DeviceOperatingSystemVendor = deviceInformation.DeviceOperatingSystemVendor,
-                DeviceType = deviceInformation.DeviceType,
-                DeviceVendor = deviceInformation.DeviceVendor,
-                HardwareDisplayHeight = deviceInformation.HardwareDisplayHeight,
-                HardwareDisplayWidth = deviceInformation.HardwareDisplayWidth
-            };
+            return deviceInformation;
         }
-        
-        return deviceInformation;
     }
 }
 {% endhighlight %}
