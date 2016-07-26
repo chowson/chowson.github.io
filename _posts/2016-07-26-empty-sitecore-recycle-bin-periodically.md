@@ -3,7 +3,7 @@ layout:     post
 references: []
 title:      "Empty Sitecore Recycle Bin Periodically"
 subtitle:   "Removing Sitecore archive entries older than a specified date"
-date:       2016-07-27 09:45:34
+date:       2016-07-26 09:45:34
 description: "Empty Sitecore Recycle Bin Periodically"
 tags: [sitecore]
 ---
