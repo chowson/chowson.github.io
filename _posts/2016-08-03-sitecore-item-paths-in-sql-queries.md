@@ -66,7 +66,6 @@ FROM ItemsPath
 WHERE ItemPath LIKE '/sitecore/templates%'
 
 --Returns all rows in the WorkflowHistory table for all 
-
 --descendants of the news item (/sitecore/content/Home/News)
 
 SELECT	 WorkflowHistory.*
