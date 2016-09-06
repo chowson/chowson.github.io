@@ -5,7 +5,7 @@ title:      "Sitecore Item Paths in SQL Queries"
 subtitle:   "Viewing and Querying by Item Path in Sitecore SQL Databases"
 date:       2016-09-03 09:45:34
 description: "Sitecore Item Paths in SQL Queries"
-tags: [sitecore,debugging]
+tags: [sitecore,debugging,sql]
 ---
 <p>Developing or debugging Sitecore applications can quite often lead 
 to executing SQL queries to try and work out how something works or 
