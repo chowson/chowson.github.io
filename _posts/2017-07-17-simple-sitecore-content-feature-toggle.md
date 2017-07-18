@@ -20,7 +20,7 @@ as  unpublishable. The problem with this is the new content needs to be visible 
 and each deployment to the test environment resets the item to unpublishable.</p>
 
 <p>Having to mark the items as publishable and publish them on the test environments breaks 
-the continuous delivery deployment pipeline because it introduces a manual step. Continous 
+the continuous delivery deployment pipeline because it introduces a manual step. Continuous 
 delivery aims to have a fully automated process that you can deploy and release any version 
 of the software to any environment.</p>
 
