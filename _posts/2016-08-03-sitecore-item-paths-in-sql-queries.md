@@ -53,7 +53,7 @@ GO
 SELECT * FROM ItemsPath
 {% endhighlight %}
 
-<img src="/assets/2016-08-03-sitecore-item-paths-in-sql-queries/ItemPaths.jpg	" />
+<img src="/assets/2016-08-03-sitecore-item-paths-in-sql-queries/ItemPaths.jpg" />
 
 <p>Once the view is created, queries can be run like the 
 following:</p>
