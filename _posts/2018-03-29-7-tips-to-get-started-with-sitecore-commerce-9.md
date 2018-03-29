@@ -63,7 +63,7 @@ ol li ol li {
 	<li>
 		<strong>Searching for Product Images</strong>
 		<p>When adding images to a product in Business Tools, the UI searches for an image in the media library. 
-		Unless you know the exact name, you can use a wildcard (*) to help find the image.</p>
+		If you don't know the exact name or how it is nested within sub-folders, you can use a wildcard (*) to help find the image.</p>
 		<p>For example, <em>*image1*</em> will match <em>/folder/image1_01</em>. This is very useful as you don't need 
 		to remember the full path of the image to find it.</p>
 	</li>
