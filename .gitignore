@@ -1,2 +1,7 @@
 _site
 node_modules
+.tscache
+Gemfile.lock
+package-lock.json
+/ts/*.js
+/ts/*.js.map

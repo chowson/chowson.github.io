@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "sourceMap": true,
+        "removeComments": true,
+        "module": "commonjs"
+    },
+    "include": [
+        "./ts/**/*.ts"
+    ]   
+}

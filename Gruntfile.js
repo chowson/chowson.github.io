@@ -6,10 +6,20 @@ module.exports = function(grunt) {
         uglify: {
             main: {
                 src: 'js/<%= pkg.name %>.js',
-                dest: 'js/<%= pkg.name %>.min.js'
+                dest: 'js/<%= pkg.name %>.min.js',
+                options: {
+                    sourceMap: false
+                }
             },
-            options: {
-                sourceMap: true
+            custom: {
+                src: './ts/custom-blog.js',
+                dest: './js/custom-blog.min.js',
+                options: {
+                    sourceMap: {
+                        root: '/ts/'
+                    },
+                    sourceMapIn: './ts/custom-blog.js.map'
+                }
             }
         },
         less: {
@@ -30,6 +40,11 @@ module.exports = function(grunt) {
                 files: {
                     "css/<%= pkg.name %>.min.css": "less/<%= pkg.name %>.less"
                 }
+            }
+        },
+        ts: {
+            default : {
+              tsconfig: './tsconfig.json'
             }
         },
         banner: '/*!\n' +
@@ -71,8 +86,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-banner');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks("grunt-ts");
 
     // Default task(s).
-    grunt.registerTask('default', ['uglify', 'less']);
+    grunt.registerTask('default', ['ts', 'uglify', 'less']);
 
 };
