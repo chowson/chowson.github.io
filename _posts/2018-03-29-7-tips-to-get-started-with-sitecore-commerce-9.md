@@ -24,7 +24,7 @@ ol li ol li {
 	<li>
 		<strong>Commerce Business Tools</strong>
 		<p>There's a new icon added to your launchpad which is how to navigate into the backend commerce system.
-		<img src="/assets/2018-03-29-7-tips-to-get-started-with-sitecore-commerce-9/business-tools.png" alt="Business Tools icon on the Launchpad" /></p>
+		<img class="lazy" data-src="/assets/2018-03-29-7-tips-to-get-started-with-sitecore-commerce-9/business-tools.png" alt="Business Tools icon on the Launchpad" /></p>
 	</li>	
 	<li>
 		<strong>Commerce Business Tools runs off localhost</strong>
@@ -44,7 +44,7 @@ ol li ol li {
 	<li>
 		<strong>New Commerce Chunk</strong>
 		<p>The ribbon in the Content Editor has a new Commerce chunk, this is very useful to know about (see below).
-		<img src="/assets/2018-03-29-7-tips-to-get-started-with-sitecore-commerce-9/commerce-toolbar.JPG" alt="New commerce chunk in the content editor ribbon" /></p>
+		<img class="lazy" data-src="/assets/2018-03-29-7-tips-to-get-started-with-sitecore-commerce-9/commerce-toolbar.JPG" alt="New commerce chunk in the content editor ribbon" /></p>
 	</li>
 	<li>
 		<strong>Getting new categories / products to show in the content editor</strong>
@@ -58,7 +58,7 @@ ol li ol li {
 		<strong>Adding a new Catalog</strong>
 		<p>New catalogs won't show in the <em>Catalog Management</em> section of the content editor by default. To configure which
 		catalogs appear, edit the <em>Selected Catalogs</em> field on the item <em>/sitecore/Commerce/Catalog Management/Catalogs</em>.
-		<img src="/assets/2018-03-29-7-tips-to-get-started-with-sitecore-commerce-9/new-catalog-config.JPG" alt="Configuring which catalogs to show in the content editor" /></p>
+		<img class="lazy" data-src="/assets/2018-03-29-7-tips-to-get-started-with-sitecore-commerce-9/new-catalog-config.JPG" alt="Configuring which catalogs to show in the content editor" /></p>
 	</li>
 	<li>
 		<strong>Searching for Product Images</strong>
