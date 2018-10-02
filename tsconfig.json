@@ -3,7 +3,8 @@
         "target": "es5",
         "sourceMap": true,
         "removeComments": true,
-        "module": "commonjs"
+        "module": "system",
+        "outFile": "./ts/custom-blog.js"
     },
     "include": [
         "./ts/**/*.ts"

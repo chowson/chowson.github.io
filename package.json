@@ -15,6 +15,7 @@
         "grunt-contrib-watch": "~1.1.0",
         "grunt-banner": "~0.6.0",
         "grunt-contrib-uglify": "~4.0.0",
+        "grunt-contrib-clean": "~2.0.0",
         "grunt-ts": "latest",
         "@types/jquery": "~3.3.10"
     },

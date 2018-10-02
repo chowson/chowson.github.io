@@ -3,6 +3,17 @@ module.exports = function(grunt) {
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        clean:{
+            tsFolderJs: ['ts/**/*.js'],
+            tsFolderJsMap: ['ts/**/*.js.map'],
+            jsFolderJsMap: ['js/**/*.min.js.map'],
+            compiledJs: ["js/custom-blog*.js"]
+        },
+        ts: {
+            default : {
+              tsconfig: './tsconfig.json'
+            }
+        },
         uglify: {
             main: {
                 src: 'js/<%= pkg.name %>.js',
@@ -11,7 +22,7 @@ module.exports = function(grunt) {
                     sourceMap: false
                 }
             },
-            custom: {
+            customBlogTest: {
                 src: './ts/custom-blog.js',
                 dest: './js/custom-blog.min.js',
                 options: {
@@ -40,11 +51,6 @@ module.exports = function(grunt) {
                 files: {
                     "css/<%= pkg.name %>.min.css": "less/<%= pkg.name %>.less"
                 }
-            }
-        },
-        ts: {
-            default : {
-              tsconfig: './tsconfig.json'
             }
         },
         banner: '/*!\n' +
@@ -78,7 +84,7 @@ module.exports = function(grunt) {
                     spawn: false,
                 }
             },
-        },
+        }
     });
 
     // Load the plugins.
@@ -87,8 +93,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-banner');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks("grunt-ts");
+    grunt.loadNpmTasks("grunt-contrib-clean");
 
     // Default task(s).
-    grunt.registerTask('default', ['ts', 'uglify', 'less']);
+    grunt.registerTask('default', ['clean', 'ts', 'uglify', 'less']);
 
 };
