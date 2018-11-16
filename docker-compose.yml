@@ -1,0 +1,31 @@
+version: '3'
+services:
+    jekyll:
+        image: jekyll/jekyll:3.8.3
+        container_name: chowson-github-io
+        #command: bash -c "bundle install && bundle exec jekyll serve --host 0.0.0.0 --force_polling"
+        command: bash -c "gem install bundler && bundle install && bundle exec jekyll serve --host 0.0.0.0 && tail -F anything"
+        # working on one post - use incremental mode
+        #command: jekyll serve --host 0.0.0.0 --drafts --config _config.yml,_config_dev.yml --watch --incremental
+
+        # add new post - no incremental mode, Jekyll will regenerate dependencies on save
+        #command: jekyll serve --host 0.0.0.0 --drafts --config _config.yml
+
+        # work on design - no incremental mode, no drafts, looks like production
+        # command: jekyll serve --host 0.0.0.0 --config _config.yml,_config_dev.yml --watch
+
+        volumes:
+            - .:/srv/jekyll
+
+        ports:
+            - 4000:4000
+        stdin_open: true
+        tty: true
+
+#docker-compose up
+#docker-compose up -d
+#docker exec -i -t chowson-github-io bash
+#docker-compose logs -f
+
+#cat FILENAME - display filename
+#bundle exec jekyll serve --host 0.0.0.0
