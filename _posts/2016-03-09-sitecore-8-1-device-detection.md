@@ -144,4 +144,4 @@ then bear this functionality in mind.</p>
 <p>xDB also has an integration with Device Detection where reports can be generated showing a
 breakdown of visitors by device type and then further filtered down to show a report by 
 device model. You can see an <a href="https://doc.sitecore.net/~/media/446AB72ED1504A38B133E8EBD43D41A1.ashx?la=en">
-example report on the Sitecore documentation.</p>
+example report</a> on the Sitecore documentation.</p>

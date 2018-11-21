@@ -92,5 +92,5 @@ in a subfolder called <em>Logs</em> relative to where the script is being run.</
 <p>Once the script has finished executing, the Sitecore Log Analyzer can be used as 
 normal by analysing the <em>Logs</em> folder created, e.g.</p>
 
-<img src="/assets/2016-01-12-analyse-sitecore-logs-in-aws-cloudwatch-logs/SitecoreLogAnalyzer-Result.jpg" alt="SitecoreLogAnalyzer Result" />
+<img class="lazy" data-src="/assets/2016-01-12-analyse-sitecore-logs-in-aws-cloudwatch-logs/SitecoreLogAnalyzer-Result.jpg" alt="SitecoreLogAnalyzer Result" />
 

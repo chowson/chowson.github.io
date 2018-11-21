@@ -23,8 +23,6 @@ module CustomBlog
             lazyImages.forEach(image => {
                 this._observer.observe(image);
             });
-
-            console.log("lazyImages found: " + lazyImages.length);
         }
 
         private OnIntersection(entries: IntersectionObserverEntry[]): void

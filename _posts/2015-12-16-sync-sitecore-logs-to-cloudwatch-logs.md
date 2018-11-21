@@ -134,16 +134,16 @@ Follow this guide to enable this with Sitecore log files:</p>
 	<li><strong>Enable CloudWatch logs</strong><br />
 	The final step is to enable <em>CloudWatch Logs</em>. To do this, open the <em>EC2ConfigService</em> 
 	Settings and ensure the <q>Enable CloudWatch Logs integration</q> checkbox is checked:
-	<img src="/assets/2015-12-16-sync-sitecore-logs-to-cloudwatch-logs/EnableCloudWatchLogs.jpg" alt="Enable CloudWatch Logs integration"/>
+	<img class="lazy" data-src="/assets/2015-12-16-sync-sitecore-logs-to-cloudwatch-logs/EnableCloudWatchLogs.jpg" alt="Enable CloudWatch Logs integration"/>
 	<br /></li>
 	<li><strong>Check results</strong><br />
 	<span>The easiest way to check that everything is working is to log into the AWS 
 	Console and navigate to <em>CloudWatch Logs</em>. Here you should see a new
 	<em>Log Group</em> has been created called <q>sitecore-logs</q> and within it you'll see
 	<em>Log Streams</em> containing log entries:</span><br /><br />
-	<img src="/assets/2015-12-16-sync-sitecore-logs-to-cloudwatch-logs/LogGroup.jpg" alt="CloudWatch Logs Log Group"/><br />
-	<img src="/assets/2015-12-16-sync-sitecore-logs-to-cloudwatch-logs/LogStream.jpg" alt="CloudWatch Logs Log Stream"/><br />
-	<img src="/assets/2015-12-16-sync-sitecore-logs-to-cloudwatch-logs/LogEntries.jpg" alt="CloudWatch Logs Log Entries"/><br />
+	<img class="lazy" data-src="/assets/2015-12-16-sync-sitecore-logs-to-cloudwatch-logs/LogGroup.jpg" alt="CloudWatch Logs Log Group"/><br />
+	<img class="lazy" data-src="/assets/2015-12-16-sync-sitecore-logs-to-cloudwatch-logs/LogStream.jpg" alt="CloudWatch Logs Log Stream"/><br />
+	<img class="lazy" data-src="/assets/2015-12-16-sync-sitecore-logs-to-cloudwatch-logs/LogEntries.jpg" alt="CloudWatch Logs Log Entries"/><br />
 	<span>If it doesn't look like it's working, then check the EC2Config Service log file 
 	(<em style="word-break:break-all">C:\Program Files\Amazon\Ec2ConfigService\Logs\Ec2ConfigLog.txt</em>)
 	to see if there are any errors with your setup.</span>

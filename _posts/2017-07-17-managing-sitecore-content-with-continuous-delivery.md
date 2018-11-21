@@ -12,7 +12,7 @@ tags: [sitecore]
 it's ready is to use publishing restrictions. Marking the content as unpublishable 
 ensures any publishes don't push the content to the web database.</p>
 
-<img src="/assets/2017-07-17-simple-sitecore-content-feature-toggle/item-publishing-restrictions.jpg" />
+<img class="lazy" data-src="/assets/2017-07-17-simple-sitecore-content-feature-toggle/item-publishing-restrictions.jpg" />
 
 <p>Whilst developing a new area of the site, continuous delivery will deploy partially
 completed pages. To ensure the new content is hidden from users, it is marked 
