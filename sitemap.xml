@@ -24,7 +24,7 @@ layout: null
     <priority>0.4</priority>
   </url>{% for tag in site.data.tags %}
   <url>
-    <loc>{{ tag.slug | prepend:"/tag/" | prepend: site.baseurl | prepend: site.url }}</loc>
+    <loc>{{ tag.slug | prepend:"/tag/" | prepend: site.baseurl | prepend: site.url | append:"/" }}</loc>
     <priority>0.4</priority>
   </url>{% endfor %}
 </urlset>
