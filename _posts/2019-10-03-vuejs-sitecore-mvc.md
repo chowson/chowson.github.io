@@ -3,7 +3,7 @@ layout:     post
 references: []
 title:      "Vue.js and Sitecore MVC"
 subtitle:   "How to develop Vue.js and Sitecore MVC applications"
-date:       2019-09-30 19:54:11
+date:       2019-10-03 19:54:11
 description: "How to develop Vue.js and Sitecore MVC applications"
 tags: [sitecore]
 ---
