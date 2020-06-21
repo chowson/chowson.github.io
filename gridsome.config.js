@@ -7,6 +7,7 @@
 module.exports = {
   siteName: 'chowson.github.io',
   siteUrl: 'https://chowson.github.io',
+  titleTemplate: '%s | chowson.github.io',
   plugins: [
     {
       use: 'gridsome-plugin-tailwindcss',

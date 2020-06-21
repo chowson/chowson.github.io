@@ -56,7 +56,8 @@ import PaginationPosts from '../components/PaginationPosts'
 
 export default {
   metaInfo: {
-    title: 'Home',
+    titleTemplate: 'chowson.github.io | %s',
+    title: 'Sitecore, C# & ASP.NET Development blog',
     links: [
       { rel: 'canonical', href: 'https://chowson.github.io' }
     ],
