@@ -6,7 +6,7 @@
     "develop": "gridsome develop",
     "explore": "gridsome explore",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d dist"
+    "deploy": "gh-pages -b master -d dist -r 'https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$INPUT_REPO.git'"
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.1",
