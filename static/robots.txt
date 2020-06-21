@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://chowson.github.io/sitemap.xml

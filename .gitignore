@@ -1,7 +1,8 @@
-_site
+*.log
+.cache
+.DS_Store
+src/.temp
 node_modules
-.tscache
-Gemfile.lock
-package-lock.json
-/ts/*.js
-/ts/*.js.map
+dist
+.env
+.env.*
