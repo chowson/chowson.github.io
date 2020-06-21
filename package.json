@@ -1,26 +1,25 @@
 {
-    "name": "clean-blog",
-    "title": "Clean Blog",
-    "version": "1.0.0",
-    "homepage": "http://startbootstrap.com",
-    "author": "Start Bootstrap",
-    "license": {
-        "type": "Apache 2.0",
-        "url": "https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE"
-    },
-    "devDependencies": {
-        "typescript": "~3.0.3",
-        "grunt": "~1.0.3",
-        "grunt-contrib-less": "~2.0.0",
-        "grunt-contrib-watch": "~1.1.0",
-        "grunt-banner": "~0.6.0",
-        "grunt-contrib-uglify": "~4.0.0",
-        "grunt-contrib-clean": "~2.0.0",
-        "grunt-ts": "latest",
-        "@types/jquery": "~3.3.10"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/IronSummitMedia/startbootstrap-clean-blog-jekyll.git"
-    }
+  "name": "chowson.github.io",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d dist"
+  },
+  "dependencies": {
+    "@gridsome/plugin-google-analytics": "^0.1.1",
+    "@gridsome/plugin-sitemap": "^0.3.0",
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.0",
+    "gh-pages": "^3.1.0",
+    "gridsome": "^0.7.16",
+    "gridsome-plugin-remark-shiki": "^0.3.1",
+    "gridsome-plugin-rss": "^1.2.0",
+    "vue-fuse": "^2.2.1"
+  },
+  "devDependencies": {
+    "gridsome-plugin-tailwindcss": "^2.2.48"
+  }
 }
