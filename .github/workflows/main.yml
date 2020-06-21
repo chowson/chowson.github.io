@@ -11,13 +11,17 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-
-    - name: Setup Git
-      run: |
-        git config --global user.name 'chowson'
-        git config --global user.email 'chowson@users.noreply.github.com'
+      with:
+        persist-credentials: false
     
     - name: Install and Build 🔧 
       run: |
         npm install
-        npm run deploy
+        npm run build
+    
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: master
+        FOLDER: dist
