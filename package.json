@@ -17,6 +17,7 @@
     "gridsome": "^0.7.16",
     "gridsome-plugin-remark-shiki": "^0.3.1",
     "gridsome-plugin-rss": "^1.2.0",
+    "postcss-nested": "^4.2.3",
     "vue-fuse": "^2.2.1"
   },
   "devDependencies": {

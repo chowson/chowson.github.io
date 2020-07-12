@@ -6,6 +6,22 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = function (api) {
+  api.chainWebpack((config) => {
+    ["css", "scss", "sass", "less", "stylus", "postcss"].forEach((lang) => {
+      config.module
+        .rule(lang)
+        .oneOf("normal")
+        .use("postcss-loader")
+        .tap((options) => {
+          options.plugins.push(
+            require("postcss-nested")
+          );
+
+          return options;
+        })
+    });
+  })
+
   api.loadSource(({ addCollection }) => {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
   })
