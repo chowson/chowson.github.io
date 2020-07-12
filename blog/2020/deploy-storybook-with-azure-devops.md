@@ -1,7 +1,7 @@
 ---
 title:      "Deploy Storybook to an Azure storage static website with Azure Devops Pipelines"
 path:       /deploy-storybook-with-azure-devops-pipelines
-date:       2019-10-03 19:54:11
+date:       2020-07-12 12:54:11
 description: "A guide to deploying Storybook to an Azure Blob Storage static website with Azure Devops Pipelines"
 tags: ['Azure', 'Devops']
 references: [
