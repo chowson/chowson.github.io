@@ -1,6 +1,8 @@
 name: Check Website Pages
 
 on:
+  deployment:
+    branches: [ master ]
   push:
     branches: [ master ]
 
