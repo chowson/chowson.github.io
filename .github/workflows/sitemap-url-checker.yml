@@ -5,7 +5,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build-and-deploy:
+  test-sitemap-links:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,3 +18,4 @@ jobs:
       uses: paramt/url-checker@master
       with:
         files: "sitemap.xml"
+        blacklist: "http://www.w3.org/1999/xhtml,http://www.google.com/schemas/sitemap-mobile/1.0"
