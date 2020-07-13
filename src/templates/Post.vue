@@ -52,46 +52,49 @@ query Post ($path: String!) {
 <script>
 export default {
   metaInfo() {
-    var publishedDate = new Date(this.$page.post.date);
-    var formattedPublishedDate = `${publishedDate.getFullYear()}-${("0" + publishedDate.getMonth()).slice(-2)}-${("0" + publishedDate.getDate()).slice(-2)}`;
+    if(this.$page && this.$page.post)
+    {
+      var publishedDate = new Date(this.$page.post.date);
+      var formattedPublishedDate = `${publishedDate.getFullYear()}-${("0" + publishedDate.getMonth()).slice(-2)}-${("0" + publishedDate.getDate()).slice(-2)}`;
 
-    return {
-      title: this.$page.post.title,
-      meta: [
-        { description: this.$page.post.description },
-      ],
-      script: [
-        {
-          innerHTML: JSON.stringify({
-            "@context": "https://schema.org/",
-            "@type": "BlogPosting",
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": `https://chowson.github.io${this.$page.post.path}`
-            },
-            "headline": "headling",
-            "author": {
-              "@type": "Person",
-              "name": "Chris Howson",
-              "sameAs": "https://github.io/chowson"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "chowson.github.io",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://chowson.github.io/images/logo.png"
-              }
-            },
-            "image": "https://chowson.github.io/images/logo.png",
-            "dateCreated": formattedPublishedDate,
-            "datePublished": formattedPublishedDate,
-            "dateModified": formattedPublishedDate,
-            "description": this.$page.post.description
-          }),
-          type: 'application/ld+json'
-        }
-      ]
+      return {
+        title: this.$page.post.title,
+        meta: [
+          { description: this.$page.post.description },
+        ],
+        script: [
+          {
+            innerHTML: JSON.stringify({
+              "@context": "https://schema.org/",
+              "@type": "BlogPosting",
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": `https://chowson.github.io${this.$page.post.path}`
+              },
+              "headline": "headling",
+              "author": {
+                "@type": "Person",
+                "name": "Chris Howson",
+                "sameAs": "https://github.io/chowson"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "chowson.github.io",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://chowson.github.io/images/logo.png"
+                }
+              },
+              "image": "https://chowson.github.io/images/logo.png",
+              "dateCreated": formattedPublishedDate,
+              "datePublished": formattedPublishedDate,
+              "dateModified": formattedPublishedDate,
+              "description": this.$page.post.description
+            }),
+            type: 'application/ld+json'
+          }
+        ]
+      }
     }
   }
 }
