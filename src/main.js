@@ -12,9 +12,25 @@ export default function (Vue, { router, head, isClient }) {
 
   Vue.use(VueFuse);
 
+  const googleFonts = "https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap";
+
+  head.link.push({
+    rel: 'preload',
+    href: 'https://fonts.gstatic.com',
+    crossorigin: ''
+  });
+
+  head.link.push({
+    rel: 'preload',
+    as: 'style',
+    href: googleFonts
+  });
+
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap'
+    href: 'https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap',
+    media: 'print',
+    onload: 'this.media=\'all\''
   });
 
   head.meta.push(

@@ -8,7 +8,7 @@
       </h1>
       <div class="mt-8 sm:mt-0">
         <g-image v-if="large"
-            src="../../static/images/code-review.svg" width="250" alt="hero" class="mx-auto sm:mx-0" />
+            src="../../static/images/code-review.svg" width="250" height="190" alt="hero" class="mx-auto sm:mx-0" />
         <g-image v-else
             src="../../static/images/code-review.svg" width="160" alt="hero" class="mx-auto sm:mx-0" />
       </div>
