@@ -15,7 +15,7 @@ export default function (Vue, { router, head, isClient }) {
   const googleFonts = "https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap";
 
   head.link.push({
-    rel: 'preload',
+    rel: 'preconnect',
     href: 'https://fonts.gstatic.com',
     crossorigin: ''
   });
