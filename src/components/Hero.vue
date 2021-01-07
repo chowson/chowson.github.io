@@ -7,18 +7,12 @@
         <div class="text-brand-700 leading-tight">{{ leadingTight }}</div>
       </h1>
       <div class="mt-8 sm:mt-0">
-        <img v-if="large"
-            loading="eager"
-            src="../../static/images/code-review.svg"
-            width="250" height="190"
-            alt="Hero"
-            class="mx-auto sm:mx-0" />
-        <img v-else
-            loading="eager"
-            src="../../static/images/code-review.svg"
-            width="160"
-            alt="Hero"
-            class="mx-auto sm:mx-0" />
+        <g-image v-if="large"
+            immediate="true"
+            src="../../static/images/code-review.svg" width="250" height="190" alt="hero" class="mx-auto sm:mx-0" />
+        <g-image v-else
+            immediate="true"
+            src="../../static/images/code-review.svg" width="160" alt="hero" class="mx-auto sm:mx-0" />
       </div>
     </section>
 </template>
