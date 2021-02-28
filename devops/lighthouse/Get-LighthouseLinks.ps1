@@ -1,0 +1,2 @@
+[XML]$sitemap = Get-Content (Join-Path $PSScriptRoot "\..\..\dist\sitemap.xml")
+$sitemap.urlset.url | ForEach-Object { Write-Host "'$($_.loc.replace("https://chowson.github.io", "http://localhost:8080"))'," }

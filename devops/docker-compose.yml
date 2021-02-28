@@ -1,0 +1,13 @@
+version: '3'
+services:
+  web:
+    image: chowson.github.io
+    build: 
+      context: ../
+      dockerfile: ./devops/Dockerfile
+    container_name: chowson.github.io
+    restart: always
+    ports:
+      - "8080:80"
+    volumes: 
+      - ../dist:/usr/share/nginx/html

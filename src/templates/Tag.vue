@@ -17,7 +17,7 @@
         </div>
 
         <div class="mb-8">
-          <g-link :to="post.node.path" class="font-bold uppercase">Read More</g-link>
+          <g-link :to="post.node.path" class="font-bold uppercase">Read post</g-link>
         </div>
       </article>
 
@@ -67,7 +67,10 @@ import PaginationPosts from '../components/PaginationPosts'
 export default {
   metaInfo() {
     return {
-      title: 'Tag: ' + this.$page.tag.title
+      title: 'Tag: ' + this.$page.tag.title,
+      meta: [
+        { name: 'description', content: `Blog post listings about ${this.$page.tag.title}` }
+      ]
     }
   },
   components: {

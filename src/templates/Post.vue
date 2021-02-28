@@ -60,7 +60,7 @@ export default {
       return {
         title: this.$page.post.title,
         meta: [
-          { description: this.$page.post.description },
+          { name: 'description', content: this.$page.post.description },
         ],
         script: [
           {

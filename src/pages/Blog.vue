@@ -19,7 +19,7 @@
         </div>
 
         <div class="mb-8">
-          <g-link :to="post.node.path" class="font-bold uppercase">Read More</g-link>
+          <g-link :to="post.node.path" class="font-bold uppercase">Read post</g-link>
         </div>
       </article> <!-- end post -->
 
@@ -61,7 +61,10 @@ import PaginationPosts from '../components/PaginationPosts'
 export default {
   metaInfo() {
     var meta = {
-        title: 'Blog'
+        title: 'Blog',
+        meta: [
+          { name: 'description', content: `Blog post articles listing page ${this.$page.posts.pageInfo.currentPage} of ${this.$page.posts.pageInfo.totalPages}` }
+        ]
     };
 
     if(this.$page.posts.pageInfo.currentPage == 1) {

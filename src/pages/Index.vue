@@ -16,7 +16,7 @@
         </div>
 
         <div class="mb-8">
-          <g-link :to="post.node.path" class="font-bold uppercase">Read More</g-link>
+          <g-link :to="post.node.path" class="font-bold uppercase">Read post</g-link>
         </div>
       </div> <!-- end post -->
 
@@ -53,12 +53,17 @@ query Posts ($page: Int) {
 
 <script>
 import PaginationPosts from '../components/PaginationPosts'
+import cr from '../../static/images/code-review.svg';
 
 export default {
   metaInfo: {
     titleTemplate: 'chowson.github.io | %s',
-    title: 'Sitecore, C# & ASP.NET Development blog',
+    title: 'Sitecore, .NET & Azure Development blog',
+    meta: [
+      { name: 'description', content: 'A Sitecore, .NET Development & Azure Blog' }
+    ],
     links: [
+      { rel: 'preload', href:cr, as:'image' },
       { rel: 'canonical', href: 'https://chowson.github.io' }
     ],
     script: [

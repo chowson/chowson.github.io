@@ -31,7 +31,10 @@ query Tags {
 <script>
 export default {
   metaInfo: {
-    title: 'Tags'
+    title: 'Tags',
+    meta: [
+      { name: 'description', content: 'Browse blog posts by tag' }
+    ]
   }
 }
 </script>
