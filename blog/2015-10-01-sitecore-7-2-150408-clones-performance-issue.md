@@ -28,7 +28,7 @@ The impact of adding this setting is as expected, it disables the cloning functi
 The issue has been raised as a bug with the software and can be tracked using the reference
 number 436659 (for information on reference numbers you can read the [KB article](https://kb.sitecore.net/articles/853187).
 
-#### Update 29/10/2015
+## Update 29/10/2015
 The [release notes of Sitecore 7.2 Update-5](https://sdn.sitecore.net/products/sitecore%20v5/sitecore%20cms%207/releasenotes/changelog/release%20history%20sc72.aspx) indicate that this issue has been resolved.
 
 

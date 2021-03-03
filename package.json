@@ -2,7 +2,11 @@
   "name": "chowson.github.io",
   "private": true,
   "browserslist": [
-    "defaults"
+    "defaults",
+    "not IE > 8",
+    "not opera > 0",
+    "not op_mob > 0",
+    "not op_mini > 0"
   ],
   "scripts": {
     "build": "gridsome build",
@@ -14,17 +18,22 @@
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.1",
-    "@gridsome/plugin-sitemap": "^0.3.0",
+    "@gridsome/plugin-sitemap": "^0.4.0",
     "@gridsome/source-filesystem": "^0.6.2",
-    "@gridsome/transformer-remark": "^0.6.0",
+    "@gridsome/transformer-remark": "^0.6.4",
     "gh-pages": "^3.1.0",
     "gridsome": "^0.7.23",
-    "gridsome-plugin-remark-shiki": "^0.3.1",
+    "gridsome-plugin-remark-shiki": "^0.6.0",
     "gridsome-plugin-rss": "^1.2.0",
     "postcss-nested": "^4.2.3",
     "vue-fuse": "^2.2.1"
   },
   "devDependencies": {
-    "gridsome-plugin-tailwindcss": "^2.2.48"
+    "remark-attr": "^0.11.1",
+    "@tailwindcss/postcss7-compat": "^2.0.3",
+    "gridsome-plugin-tailwindcss": "^4.1.1",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3",
+    "webpack-bundle-analyzer": "^4.4.0"
   }
 }

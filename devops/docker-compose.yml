@@ -1,13 +1,17 @@
-version: '3'
+version: "3.7"
+
 services:
-  web:
-    image: chowson.github.io
-    build: 
-      context: ../
-      dockerfile: ./devops/Dockerfile
+  caddy:
+    image: caddy:alpine
     container_name: chowson.github.io
-    restart: always
+    restart: unless-stopped
     ports:
-      - "8080:80"
-    volumes: 
-      - ../dist:/usr/share/nginx/html
+      - "80:80"
+      - "443:443"
+      - "2019:2019"
+      - "8080:8080"
+    volumes:
+      - ./caddy/configfile:/etc/caddy
+      - ../dist:/srv
+      - ./caddy/data:/data
+      - ./caddy/config/:/config

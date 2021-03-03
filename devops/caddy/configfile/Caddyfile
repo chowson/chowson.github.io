@@ -1,0 +1,9 @@
+:8080
+
+encode gzip
+file_server browse
+
+@static {
+  path_regexp \.(ico|css|js|gif|jpg|jpeg|png|svg|woff)$
+}
+header @static Cache-Control max-age=31536000

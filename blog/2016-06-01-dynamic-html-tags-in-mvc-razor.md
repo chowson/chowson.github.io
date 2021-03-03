@@ -12,7 +12,7 @@ The HTML helper method *Html.BeginForm* is a useful way to dynamically create
 `<form>` tags. It would be useful to be able to do this for other HTML
 tags so that the HTML output is dynamically generated keeping your markup clean.
 
-#### Example
+## Example
 
 In the following example, `_dataProvider.GetAdvertDataAttributes()` returns
 an `IDictionary<string, object>` and defines any additional data attributes
@@ -41,7 +41,7 @@ This requires code to convert the dictionary into a string ensuring that the att
 are encoded properly using `HttpUtility.HtmlAttributeEncode`. Also, it could lead to 
 `class=""` being output to the page.
 
-### Solution
+## Solution
 
 Using the extension method for `System.Web.Mvc.HtmlHelper` and supporting *MvcTag*
 class found at the end of the post, it becomes a lot simpler to create the dynamic
@@ -73,7 +73,7 @@ would not have any empty attributes, i.e.
 </div>
 ```
 
-### Code
+## Code
 
 To achieve this, the following *HtmlHelper* extension method and 
 supporting *MvcTag* class are required:

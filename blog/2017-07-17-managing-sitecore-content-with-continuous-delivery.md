@@ -13,7 +13,7 @@ The standard way in Sitecore to prevent content being seen by users before
 it's ready is to use publishing restrictions. Marking the content as unpublishable 
 ensures any publishes don't push the content to the web database.
 
-![Item publishing restrictions](./images/2017-07-17-simple-sitecore-content-feature-toggle/item-publishing-restrictions.jpg)
+![Item publishing restrictions](./images/2017-07-17-simple-sitecore-content-feature-toggle/item-publishing-restrictions.jpg){width=996 height=286}
 
 Whilst developing a new area of the site, continuous delivery will deploy partially
 completed pages. To ensure the new content is hidden from users, it is marked 
@@ -75,7 +75,7 @@ landing page.
 To use this approach, simply create the controller rendering and add it to the 
 content item instead of marking the item as unpublishable.
 
-### Benefits of Approach
+## Benefits of Approach
 
 * The deployment process for each environment is the same.
 * The test team don't need to make the new content items publishable and then publish them
@@ -85,11 +85,11 @@ the content being published.
 * If the client wants to see the new features on the live site, then they can.
 * Public users receive a 404 response when they hit the URL.
 
-### When to use this?
+## When to use this?
 
 * When the new content is isolated - e.g. Developing a new homepage - publishing the item to a URL with the feature toggle rendering will allow authorised people to see the new page on the without the public being able to see it.
 
-### When not to use it?
+## When not to use it?
 
 * Any new page which other pages have been set up to link to.
 

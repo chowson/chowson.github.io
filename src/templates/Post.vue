@@ -3,8 +3,8 @@
     <div class="container-inner mx-auto my-8">
       <article>
         <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }}</h1>
-        <div class="text-xl text-gray-600">{{ $page.post.date }}</div>
-        <div class="text-sm text-gray-600 mb-4">{{ $page.post.timeToRead }} min read</div>
+        <div class="text-xl text-gray-700 dark:text-gray-500">{{ $page.post.date }}</div>
+        <div class="text-sm text-gray-700 dark:text-gray-500 mb-4">{{ $page.post.timeToRead }} min read</div>
         <div class="flex mb-8 text-sm">
           <g-link
             :to="tag.path"
@@ -16,10 +16,10 @@
         </div>
         <div class="markdown-body mb-8" v-html="$page.post.content" />
         <div class="mb-6 pt-6 border-t-1 border-gray-600" v-if="$page.post.references.length > 0">
-          <h4 class="text-xl">References</h4>
+          <h2 class="text-xl">References</h2>
           <ul class="list-disc list-inside">
             <li v-for="reference in $page.post.references" :key="reference">
-              <a class="external mb-1 inline-block" target="_blank" rel="noreferrer" :href="reference.split('|')[0]">{{ reference.split("|")[1] }}</a>
+              <a class="external mb-1 inline-block" style="padding: 5px 0" target="_blank" rel="noreferrer" :href="reference.split('|')[0]">{{ reference.split("|")[1] }}</a>
             </li>
           </ul>
         </div>

@@ -9,7 +9,7 @@ description: "Providing publishing based on item security"
 tags: [sitecore]
 ---
 
-#### Problem...
+## Problem...
 
 In order to grant a user permissions to publish in Sitecore, they need to be part
 of the *Sitecore Client Publishing* role. Once a user is a member of this role,
@@ -27,7 +27,7 @@ all sub-items, effectively performing a site publish.
   - Issue: If workflow isn't enabled on all items you can end up with things published
 that are incomplete.
 
-#### Solution...
+## Solution...
 
 A potential solution around this is to hide the publishing buttons on items which the
 context user doesn't have permissions to write to, therefore only allowing them to publish

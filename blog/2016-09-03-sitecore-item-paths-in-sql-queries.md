@@ -54,7 +54,7 @@ Running the query below will return the following result:
 SELECT * FROM ItemsPath
 ```
 
-![Item paths in SQL](./images/2016-08-03-sitecore-item-paths-in-sql-queries/ItemPaths.jpg)
+![Item paths in SQL](./images/2016-08-03-sitecore-item-paths-in-sql-queries/ItemPaths.jpg){width=1283 height=307}
 
 Once the view is created, queries can be run like the following:
 

@@ -9,6 +9,8 @@
             function setTheme(newTheme) {
                 window.__theme = newTheme;
                 document.body.setAttribute('data-theme', newTheme);
+                if(newTheme === 'theme-dark') { document.body.classList.add('dark'); }
+                else { document.body.classList.remove('dark'); }
             }
 
             var preferredTheme;

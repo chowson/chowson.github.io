@@ -23,7 +23,7 @@ file the instances were assigned to so that the password can be decrypted.
 
 Here is an example of the output you will get:
 
-![Describe EC2 instances](./images/2015-11-12-aws-bulk-password-retrieval/describe-ec2-instances.jpg)
+![Describe EC2 instances](./images/2015-11-12-aws-bulk-password-retrieval/describe-ec2-instances.jpg){width=669 height=121}
 
 And the script to generate it:
 

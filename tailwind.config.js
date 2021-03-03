@@ -9,6 +9,7 @@ module.exports = {
         './docs/**/*.md',
         './blog/**/*.md',
     ],
+    darkMode: 'class',
     theme: {
         extend: {
             spacing: {
@@ -19,9 +20,6 @@ module.exports = {
                 '1': '1px',
                 '3': '3px',
                 '14': '14px',
-            },
-            screens: {
-                'dark': {'raw': '(prefers-color-scheme: dark)'},
             },
             opacity: {
                 '80': '0.8'

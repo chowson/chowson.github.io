@@ -89,8 +89,10 @@ As per the AWS Powershell documentation for *Get-CWLLogEvents*, the response
 has a maximum size of 1MB or 10,000 log events so multiple log files will be created 
 in a subfolder called *Logs* relative to where the script is being run.
 
+## Viewing the Logs
+
 Once the script has finished executing, the Sitecore Log Analyzer can be used as 
 normal by analysing the *Logs* folder created, e.g.
 
-![SitecoreLogAnalyzer Result](./images/2016-01-12-analyse-sitecore-logs-in-aws-cloudwatch-logs/SitecoreLogAnalyzer-Result.jpg)
+![SitecoreLogAnalyzer Result](./images/2016-01-12-analyse-sitecore-logs-in-aws-cloudwatch-logs/SitecoreLogAnalyzer-Result.jpg){width=1010 height=761}
 

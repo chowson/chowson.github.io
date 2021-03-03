@@ -4,6 +4,16 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+//const customNord = require('./node_modules/shiki-themes/data/nord.json');
+const fs = require('fs');
+const shiki = require('shiki')
+const customNord = shiki.loadTheme('./node_modules/shiki-themes/data/nord.json')
+const constantNumeric = customNord.tokenColors.find((setting) => setting.name === 'Constant Numeric');
+constantNumeric.settings.foreground = "#C2A3BC";
+const comment = customNord.tokenColors.find((setting) => setting.name === 'Comment');
+comment.settings.foreground = "#8893aa";
+fs.writeFileSync('./node_modules/shiki-themes/data/nord.json', JSON.stringify(customNord, null, 2));
+
 module.exports = {
   siteName: 'chowson.github.io',
   siteUrl: 'https://chowson.github.io',
@@ -92,7 +102,12 @@ module.exports = {
   transformers: {
     remark: {
       plugins: [
-        [ 'gridsome-plugin-remark-shiki', { theme: 'nord', skipInline: true } ]
+        [ 'remark-attr', {} ],
+        [ 'gridsome-plugin-remark-shiki', { theme: 'nord', skipInline: true } ],
+        [ 'remark-autolink-headings', {
+            linkProperties: {ariaHidden: 'true', tabIndex: -1}
+          }
+        ]
       ],
     }
   }

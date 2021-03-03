@@ -18,7 +18,7 @@ The release of Sitecore 8.1 includes new functionality for enabling device
 detection. This post explains how developers can extend or customise the out 
 of the box implementation.
 
-### Activating Device Detection
+## Activating Device Detection
 Sitecore has chosen [Netbiscuits](http://www.netbiscuits.com/device-detection/)
 as the provider for identifying devices and describing the capabilities they have. The 
 service requires a subscription through the *Sitecore App Center* which can be 
@@ -28,12 +28,12 @@ detection functionality described below is disabled.
 
 You can find more information for [setting up device detection on the Sitecore documentation site](https://doc.sitecore.net/sitecore_experience_platform/developing/device_detection/set_up_device_detection).
 
-### Using Device Detection
+## Using Device Detection
 
 You can read about [using Device Detection](https://doc.sitecore.net/sitecore_experience_platform/developing/device_detection/using_device_detection) on the Sitecore documentation site which goes through all of the integration points that are offered out of the box. The following points 
 describe how this default functionality can be extended.
 
-#### Creating a Custom Provider
+### Creating a Custom Provider
 
 If you already have device detection on your site using a different provider then you may 
 want to carry on using that provider. Sitecore documentation provides some useful developer information for 
@@ -111,11 +111,11 @@ Calling the base class's implementation of *GetDeviceInformation* ensures that
 the result is cached within the Sitecore *DeviceItemsCache* and therefore only 
 1 lookup is required per user agent (until the cache is cleared).
 
-#### Sitecore Rules Engine Integration
+### Sitecore Rules Engine Integration
 
 One of the device detection integrations Sitecore provides is a set of rules for use with the Sitecore rules engine. The rules can be found under the item `/sitecore/system/Settings/Rules/Definitions/Elements/Device` and are described [on the Sitecore Documentation site](https://doc.sitecore.net/sitecore_experience_platform/developing/device_detection/rules_and_parameters_for_device_detection). There is also a guide on how to [create new custom rules](https://doc.sitecore.net/sitecore_experience_platform/developing/device_detection/create_custom_rules_for_sitecore_device_detection).
 
-#### Sitecore Device Items & Device Detection
+### Sitecore Device Items & Device Detection
 
 Another integration point for these rules are on the Sitecore device items found under
 `/sitecore/layout/Devices/Default`. A new field, *Rule*, has been added so that Sitecore will switch the user to that device item if the given rule evaluates to true. For example, *Mobile* Sitecore device item could use the rule *`Device type is equal to Smartphone`* to activate it.
@@ -126,7 +126,7 @@ through into the method `Sitecore.Data.Items.DeviceItem.MatchesRule(HttpContext 
 customised, but if you find yourself needing to override the default *DeviceResolver*
 then bear this functionality in mind.
 
-#### xDB Integration
+### xDB Integration
 
 xDB also has an integration with Device Detection where reports can be generated showing a
 breakdown of visitors by device type and then further filtered down to show a report by 

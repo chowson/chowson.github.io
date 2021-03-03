@@ -22,7 +22,7 @@ Logs*. AWS Windows AMIs come pre-configured with the *EC2ConfigService*
 which has the functionality to sync log files to *AWS CloudWatch Logs*. 
 Follow this guide to enable this with Sitecore log files:
 
-#### **1. Update *log4net* Configuration** (Optional)
+## **1. Update *log4net* Configuration** (Optional)
 
 *This step is only required if you need to keep the log	files on the server in a format which the Sitecore Log Analyzer can parse.*
 
@@ -41,7 +41,7 @@ Follow this guide to enable this with Sitecore log files:
 </log4net>
 ```
 
-#### **2. Update JSON CloudWatch Logs configuration**
+## **2. Update JSON CloudWatch Logs configuration**
 
 The *CloudWatch Logs* configuration file is located on the server in directory `C:\Program Files\Amazon\Ec2ConfigService\Settings\AWS.EC2.Windows.CloudWatch.json`. The AWS guide to ***[Configuring a Windows Instance Using the EC2Config Service](http://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/UsingConfig_WinAMI.html#send_logs_to_cwl)***	has a good introduction on how to set up pushing different types of logs to *CloudWatch Logs*, however the following	example should be a good guide to getting started with Sitecore log files:
 
@@ -99,7 +99,7 @@ Notes:
 * Line 31: The log stream will be automatically called the same name as the EC2 instance ID
   
   
-#### **3. IAM settings**
+## **3. IAM settings**
 
 The configuration above has no values set for the *AccessKey* and 
 *SecretKey*. This is because the EC2 instance's *IAM Role* 
@@ -123,28 +123,28 @@ is required. The following is an example of the *IAM policy* that is required:
 }
 ```
 
-#### **4. Enable CloudWatch logs**
+## **4. Enable CloudWatch logs**
 
 The final step is to enable *CloudWatch Logs*. To do this, open the *EC2ConfigService*
 Settings and ensure the `Enable CloudWatch Logs integration` checkbox is checked:
 
-![Enable CloudWatch Logs integration](./images/2015-12-16-sync-sitecore-logs-to-cloudwatch-logs/EnableCloudWatchLogs.jpg)
+![Enable CloudWatch Logs integration](./images/2015-12-16-sync-sitecore-logs-to-cloudwatch-logs/EnableCloudWatchLogs.jpg){width=488 height=596}
   
-#### **5. Check results**
+## **5. Check results**
 
 The easiest way to check that everything is working is to log into the AWS 
 Console and navigate to *CloudWatch Logs*. Here you should see a new
 *Log Group* has been created called `sitecore-logs` and within it you'll see
 *Log Streams* containing log entries:
 
-![CloudWatch Logs Log Group](./images/2015-12-16-sync-sitecore-logs-to-cloudwatch-logs/LogGroup.jpg)
+![CloudWatch Logs Log Group](./images/2015-12-16-sync-sitecore-logs-to-cloudwatch-logs/LogGroup.jpg){width=539 height=88}
   
-![CloudWatch Logs Log Stream](./images/2015-12-16-sync-sitecore-logs-to-cloudwatch-logs/LogStream.jpg)
+![CloudWatch Logs Log Stream](./images/2015-12-16-sync-sitecore-logs-to-cloudwatch-logs/LogStream.jpg){width=496 height=86}
   
-![CloudWatch Logs Log Entries](./images/2015-12-16-sync-sitecore-logs-to-cloudwatch-logs/LogEntries.jpg)
+![CloudWatch Logs Log Entries](./images/2015-12-16-sync-sitecore-logs-to-cloudwatch-logs/LogEntries.jpg){width=619 height=94}
   
 If it doesn't look like it's working, then check the EC2Config Service log file (`C:\Program Files\Amazon\Ec2ConfigService\Logs\Ec2ConfigLog.txt`) to see if there are any errors with your setup.
 
-#### Analysing Sitecore Logs stored in AWS CloudWatch Logs
+## Analysing Sitecore Logs stored in AWS CloudWatch Logs
 
 The next article describes how to [Analyse Sitecore Logs stored in AWS CloudWatch Logs](/analyse-sitecore-logs-in-aws-cloudwatch-logs).

@@ -33,6 +33,10 @@
   transition: background-color .5s;
 }
 
+.markdown-body h2 {
+  @apply text-xl !important;
+}
+
 [data-theme="theme-light"] {
   --bg-background-primary: white;
   --bg-background-secondary: #f7fafc;

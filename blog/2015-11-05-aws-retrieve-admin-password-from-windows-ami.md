@@ -35,7 +35,7 @@ retrieved from the EC2 console. To do this, configure the EC2Config service as f
 3. Click *Shutdown with Sysprep* and wait for the instance to become *Stopped*.
 4. Once the instance is stopped, create your AMI as normal.
 
-![Configuring EC2Config service for random generated passwords](./images/2015-11-05-aws-retrieve-admin-password-from-windows-ami/EC2ConfigService-RandomPassword.png)
+![Configuring EC2Config service for random generated passwords](./images/2015-11-05-aws-retrieve-admin-password-from-windows-ami/EC2ConfigService-RandomPassword.png){width=489 height=596}
 
 The next time you create an EC2 instance from this AMI, you will be able to retrieve
 the Administrator password from the console as normal rather than getting the error

@@ -18,7 +18,7 @@ The problem occurs when adding a new component in experience editor. The problem
 manifests itself by appearing to ignore placeholder settings and show you the treeview
 for selecting a rendering:
 
-![Select a rendering](./images/2019-09-18-vuejs-sitecore-mvc-and-experience-editor/select-a-rendering.png)
+![Select a rendering](./images/2019-09-18-vuejs-sitecore-mvc-and-experience-editor/select-a-rendering.png){ height=476 width=711}
 
 The browser then displays an alert saying "An error occurred." and the following 
 in your logs:

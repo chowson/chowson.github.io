@@ -4,6 +4,7 @@
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
+//const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = function (api) {
   api.chainWebpack((config) => {
@@ -19,6 +20,9 @@ module.exports = function (api) {
 
           return options;
         })
+
+      //config.plugin('BundleAnalyzerPlugin')
+      //      .use(BundleAnalyzerPlugin, [{ analyzerMode: 'static' }])
     });
   })
 

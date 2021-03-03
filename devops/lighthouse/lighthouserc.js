@@ -1,7 +1,7 @@
 module.exports = {
     ci: {
       collect: {
-        numberOfRuns: 1,
+        numberOfRuns: 3,
         url: [
             'http://localhost:8080/',
             'http://localhost:8080/tag/automated-testing/',
@@ -38,7 +38,6 @@ module.exports = {
             'http://localhost:8080/vuejs-sitecore-mvc-and-experience-editor/',
             'http://localhost:8080/vuejs-sitecore-mvc/',
             'http://localhost:8080/deploy-storybook-with-azure-devops-pipelines/',
-            'http://localhost:8080/',
         ],
         startServerCommand: 'docker-compose -f .\\devops\\docker-compose.yml up',
       },
@@ -46,8 +45,10 @@ module.exports = {
         "preset": "lighthouse:no-pwa",
         assertions: {
           "uses-long-cache-ttl": "off",
+          "color-contrast": "off",
           "legacy-javascript": "off",
-          "unused-javascript": "off"
+          "unused-javascript": "off",
+          "dom-size": "off"
         }
       },
       upload: {

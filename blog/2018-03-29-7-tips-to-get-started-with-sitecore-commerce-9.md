@@ -25,7 +25,7 @@ Here are some tips to help you get started after installing Sitecore Experience 
 
   There's a new icon added to your launchpad which is how to navigate into the backend commerce system.
 
-  ![Business Tools icon on the Launchpad](./images/2018-03-29-7-tips-to-get-started-with-sitecore-commerce-9/business-tools.png)
+  ![Business Tools icon on the Launchpad](./images/2018-03-29-7-tips-to-get-started-with-sitecore-commerce-9/business-tools.png){width=433 height=372}
 
 2. **Commerce Business Tools runs off localhost**
 
@@ -41,7 +41,7 @@ Here are some tips to help you get started after installing Sitecore Experience 
 
   The ribbon in the Content Editor has a new Commerce chunk, this is very useful to know about (see below).
 
-  ![New commerce chunk in the content editor ribbon](./images/2018-03-29-7-tips-to-get-started-with-sitecore-commerce-9/commerce-toolbar.jpg)
+  ![New commerce chunk in the content editor ribbon](./images/2018-03-29-7-tips-to-get-started-with-sitecore-commerce-9/commerce-toolbar.jpg){width=1129 height=180}
 
 4. **Getting new categories / products to show in the content editor**
 
@@ -57,7 +57,7 @@ Here are some tips to help you get started after installing Sitecore Experience 
   New catalogs won't show in the *Catalog Management* section of the content editor by default. To configure which
   catalogs appear, edit the *Selected Catalogs* field on the item `/sitecore/Commerce/Catalog Management/Catalogs`.
 
-  ![Configuring which catalogs to show in the content editor](./images/2018-03-29-7-tips-to-get-started-with-sitecore-commerce-9/new-catalog-config.jpg)
+  ![Configuring which catalogs to show in the content editor](./images/2018-03-29-7-tips-to-get-started-with-sitecore-commerce-9/new-catalog-config.jpg){width=320 height=174}
 
 6. **Searching for Product Images**
 
@@ -75,7 +75,7 @@ the image to find it.
 
 <br />
 
-### Future feature requests
+## Future feature requests
 
 From my brief time with Sitecore Experience Commerce 9, it would be nice to see the following features added
 to make life a bit easier:

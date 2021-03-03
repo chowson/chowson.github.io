@@ -5,7 +5,7 @@ references: []
 title:      "Sitecore Experience Analytics Cache Tuning"
 subtitle:   "Experience Analytics Cache Settings"
 date:       2016-04-29 16:12:00
-description: ""
+description: "Increase the performance of the Experience Analytics Dashboard in Sitecore 8 and xDB"
 tags: [sitecore]
 ---
 
@@ -14,7 +14,7 @@ Analytics dashboard. To increase the performance of the dashboard,
 there are a number of cache settings that can be configured 
 within the configuration include file `App_Config\Include\ExperienceAnalytics\Sitecore.ExperienceAnalytics.WebAPI.config`.
 
-### Categories of Data
+## Categories of Data
 
 To generate the graphs shown within the dashboard, Experience 
 Analytics calls a WebAPI endpoint with a number of parameters.
@@ -25,7 +25,7 @@ into the following categories:
 * **Risky** - *dateTo* parameter is greater than  3 hours ago but not *safe*.
 * **Live** - *dateTo* parameter is within the last 3 hours
 
-### Server Side Cache Settings
+## Server Side Cache Settings
 
 Depending on the category of the request, the cache 
 expiration interval is retrieved from the following configuration
@@ -35,7 +35,7 @@ settings:
 * **Risky** - ExperienceAnalytics.Api.ServerSideRiskyRequestCacheExpiration
 * **Live** - ExperienceAnalytics.Api.CacheExpiration
 
-### Client Side Caching
+## Client Side Caching
 
 Additionally, Experience Analytics uses client side caching 
 which can be configured using the following settings:
@@ -44,7 +44,7 @@ which can be configured using the following settings:
 * **Risky** - ExperienceAnalytics.Api.ClientSideRiskyRequestCacheExpiration
 * **Live** - ExperienceAnalytics.Api.CacheExpiration
 
-### Internal Cache
+## Internal Cache
 
 The last setting that can be configured is *ExperienceAnalytics.InternalCacheExpiration*. 
 This configures the internal Analytics definitions cache (e.g. segments, dimensions and sites).

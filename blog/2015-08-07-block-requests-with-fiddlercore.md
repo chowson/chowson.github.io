@@ -13,7 +13,7 @@ tags: ['automated-testing',debugging]
 Fiddler has some really powerful tools for aiding development and assisting with
 debugging. One of these features is the AutoResponder tab:
 
-![Screenshot of Fiddler AutoResponder](./images/2015-08-07-block-requests-with-fiddlercore/fiddler-autoresponder.jpg)
+![Screenshot of Fiddler AutoResponder](./images/2015-08-07-block-requests-with-fiddlercore/fiddler-autoresponder.jpg){width=559 height=329}
 
 When writing integration tests, you may need to set up a scenario to test the application
 in a given state based on different responses from external systems. The following class
