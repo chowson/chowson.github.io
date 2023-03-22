@@ -1,0 +1,8 @@
+.cache
+.prettierrc.json
+node_modules
+posts
+package.json
+public
+src/gatsby-types.d.ts
+static/search

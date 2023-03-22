@@ -2,15 +2,15 @@ name: Check Website Pages
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   test-sitemap-links:
     runs-on: ubuntu-latest
 
-    steps:    
-    - name: Check URLs
-      uses: paramt/url-checker@master
-      with:
-        files: sitemap.xml
-        blacklist: http://www.w3.org/1999/xhtml,http://www.sitemaps.org/schemas/sitemap/0.9,http://www.google.com/schemas/sitemap-news/0.9,http://www.google.com/schemas/sitemap-mobile/1.0,http://www.google.com/schemas/sitemap-image/1.1,http://www.google.com/schemas/sitemap-video/1.1
+    steps:
+      - name: Check URLs
+        uses: paramt/url-checker@master
+        with:
+          files: sitemap-index.xml
+          blacklist: http://www.w3.org/1999/xhtml,http://www.sitemaps.org/schemas/sitemap/0.9,http://www.google.com/schemas/sitemap-news/0.9,http://www.google.com/schemas/sitemap-mobile/1.0,http://www.google.com/schemas/sitemap-image/1.1,http://www.google.com/schemas/sitemap-video/1.1

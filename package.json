@@ -1,39 +1,49 @@
 {
   "name": "chowson.github.io",
+  "version": "1.0.0",
   "private": true,
-  "browserslist": [
-    "defaults",
-    "not IE > 8",
-    "not opera > 0",
-    "not op_mob > 0",
-    "not op_mini > 0"
+  "description": "chowson.github.io",
+  "author": "Chris Howson",
+  "keywords": [
+    "gatsby"
   ],
+  "engines": {
+    "node": ">=18.0.0",
+    "yarn": ">=1.17"
+  },
   "scripts": {
-    "build": "gridsome build",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d dist -r 'https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/chowson/chowson.github.io.git'",
-    "lighthouseci": "lhci autorun --config .\\devops\\lighthouse\\lighthouserc.js"
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit",
+    "lint": "prettier --check ."
   },
   "dependencies": {
-    "@gridsome/plugin-google-analytics": "^0.1.1",
-    "@gridsome/plugin-sitemap": "^0.4.0",
-    "@gridsome/source-filesystem": "^0.6.2",
-    "@gridsome/transformer-remark": "^0.6.4",
-    "gh-pages": "^3.1.0",
-    "gridsome": "^0.7.23",
-    "gridsome-plugin-remark-shiki": "^0.6.0",
-    "gridsome-plugin-rss": "^1.2.0",
-    "postcss-nested": "^4.2.3",
-    "vue-fuse": "^2.2.1"
+    "gatsby": "^5.8.0",
+    "gatsby-plugin-image": "^3.8.0",
+    "gatsby-plugin-manifest": "^5.8.0",
+    "gatsby-plugin-sharp": "^5.8.0",
+    "gatsby-plugin-sitemap": "^6.8.0",
+    "gatsby-remark-images": "^7.8.0",
+    "gatsby-remark-prismjs": "^7.8.0",
+    "gatsby-source-filesystem": "^5.8.0",
+    "gatsby-transformer-remark": "^6.8.0",
+    "gatsby-transformer-sharp": "^5.8.0",
+    "prismjs": "~1.29.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "remark-attr": "^0.11.1",
-    "@tailwindcss/postcss7-compat": "^2.0.3",
-    "gridsome-plugin-tailwindcss": "^4.1.1",
-    "postcss": "^7.0.35",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3",
-    "webpack-bundle-analyzer": "^4.4.0"
+    "@types/node": "^18.15.3",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "autoprefixer": "^10.4.14",
+    "gatsby-plugin-postcss": "^6.8.0",
+    "postcss": "^8.4.21",
+    "prettier": "2.8.6",
+    "tailwindcss": "^3.2.7",
+    "typescript": "^4.9.5"
   }
 }

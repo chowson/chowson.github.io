@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container-inner {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-inner {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-inner {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-inner {
+    max-width: 800px;
+  }
+}
+
+.content-wrapper {
+  transition: background-color 0.5s;
+}
+
+.markdown-body h2 {
+  @apply text-xl !important;
+}
+
+[data-theme='theme-light'] {
+  --bg-background-primary: white;
+  --bg-background-secondary: #f7fafc;
+  --bg-background-tertiary: #e2e8f0;
+
+  --bg-background-form: white;
+
+  --text-copy-primary: #2d3748;
+  --text-copy-secondary: #4a5568;
+
+  --border-border-color-primary: white;
+
+  --brand-300: #9ae6b4;
+  --brand-500: #48bb78;
+  --brand-700: #2f855a;
+  --brand-800: #276749;
+  --brand-900: #276749;
+}
+
+[data-theme='theme-dark'] {
+  --bg-background-primary: #0d2438;
+  --bg-background-secondary: #102c44;
+  --bg-background-tertiary: #1e3951;
+
+  --bg-background-form: #1a202c;
+
+  --text-copy-primary: #cbd5e0;
+  --text-copy-secondary: #e2e8f0;
+
+  --border-border-color-primary: #1a202c;
+
+  --brand-300: #c6f6d5;
+  --brand-500: #68d391;
+  --brand-700: #38a169;
+  --brand-800: #2f855a;
+  --brand-900: #276749;
+}
+
+[data-theme='theme-dark'] .markdown-body {
+  color: #cbd5e0;
+}
+
+[data-theme='theme-dark'] nav .active:not(.logo) {
+  @apply border-white border-b;
+}
+
+body {
+  background-color: var(--brand-900);
+}
+
+nav .active:not(.logo) {
+  font-weight: bold;
+  @apply border-black border-b;
+}
+
+a {
+  @apply text-brand-700 font-bold;
+}
+
+a:hover {
+  @apply text-brand-800;
+}
+
+.checkmark {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%232f855a' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' class='feather feather-tag'%3E%3Cpath d='M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z'%3E%3C/path%3E%3Cline x1='7' y1='7' x2='7.01' y2='7'%3E%3C/line%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: left center;
+  @apply pl-10;
+}
+
+.external::after {
+  margin-left: 5px;
+  height: 1rem;
+  width: 1rem;
+  box-sizing: content-box;
+  content: '';
+  display: inline-block;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%232f855a' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' class='feather feather-external-link'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'%3E%3C/path%3E%3Cpolyline points='15 3 21 3 21 9'%3E%3C/polyline%3E%3Cline x1='10' y1='14' x2='21' y2='3'%3E%3C/line%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 100%;
+}
+
+input {
+  font-weight: normal;
+}
